@@ -23,10 +23,18 @@
 5. Настоятельно рекомендуется использование принципов SOLID
 
 Результат выполнения скрипта может выглядеть так:
+
 Godzilla stands near a skyscraper
+
 PIU PIU
+
 Today in newspapers: Chuck Norris saved Tokyo!
 
+---
+
 Aliens abduct cows in the meadow
+
 PIU PIU
+
 Watch on the first channel: Chuck Norris saved the Kostroma!
+
