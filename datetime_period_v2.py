@@ -5,16 +5,12 @@ from datetime import datetime, timedelta
 """
 
 def expand_schedule(dates):
-    expanded_dates = []
-
     for start_date, end_date in dates:
-
         current_date = start_date
-        while current_date <= end_date:
-            expanded_dates.append(current_date.strftime('%Y-%m-%d %H:%M:%S'))
-            current_date += timedelta(days=1)
 
-    yield expanded_dates
+        while current_date <= end_date:
+            yield current_date.strftime('%Y-%m-%d %H:%M:%S')
+            current_date += timedelta(days=1)
 
 
 schedule = [
@@ -26,4 +22,4 @@ expanded_schedule = expand_schedule(schedule)
 
 # Вывод результата
 for date in expanded_schedule:
-    print(*date, sep='\n')
+    print(date)
